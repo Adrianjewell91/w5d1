@@ -1,0 +1,49 @@
+<h1>Sign In</h1>
+
+<form action="/users" method="post">
+
+  <input type="hidden"
+          name="authenticity_token"
+          value="<%= form_authenticity_token %>">
+
+  <label>
+    Email
+    <input type="text" name="user[email]" value="">
+  </label>
+
+  <label>
+    Password
+    <input type="text" name="user[password]" value="">
+  </label>
+
+  <!-- <h1>Email</h1>
+  <select name="user[email]">
+    <option value="1@gmail.com">1@gmail.com</option>
+    <option value="2@gmail.com">2@gmail.com</option>
+    <option value="3@gmail.com">3@gmail.com</option>
+    <option value="4@gmail.com">4@gmail.com</option>
+    <option value="5@gmail.com">5@gmail.com</option>
+    <option value="6@gmail.com">6@gmail.com</option>
+    <option value="7@gmail.com">7@gmail.com</option>
+    <option value="9@gmail.com">9@gmail.com</option>
+    <option value="0@gmail.com">10@gmail.com</option>
+    <option value="1@gmail.com">11@gmail.com</option>
+    <option value="2@gmail.com">12@gmail.com</option>
+  </select>
+
+  <h1>Password</h1>
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+
+  <label>123456
+  <input type="radio" name="user[password]" value="123456">
+  </label> -->
+
+
+  <input type="submit"value="Sign Up">
+</form>

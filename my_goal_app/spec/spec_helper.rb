@@ -94,3 +94,17 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+def sign_up(email)
+  visit new_user_path
+  fill_in "Email", with: email
+  fill_in "Password", with: '123456'
+  click_button "Sign Up"
+end
+
+def sign_in(email)
+  visit new_session_path
+  fill_in "Email", with: email
+  fill_in "Password", with: '123456'
+  click_button "Sign In"
+end

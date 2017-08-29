@@ -1,0 +1,44 @@
+<h1>Sign In</h1>
+
+<form action="/session" method="post">
+
+  <input type="hidden"
+          name="authenticity_token"
+          value="<%= form_authenticity_token %>">
+
+  <label>
+    Email
+    <input type="text" name="user[email]" value="">
+  </label>
+
+  <label>
+    Password
+    <input type="text" name="user[password]" value="">
+  </label>
+
+  <!-- <h1>Email</h1>
+  <select name="user[email]">
+    <% @users.each do |user| %>
+      <option value="user[email]"> <%= user.email %> </option>
+    <% end  %>
+  </select>
+
+  <h1>Password</h1>
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+  <input type="radio" name="user[password]" value="123456">
+
+  <label>123456
+  <input type="radio" name="user[password]" value="123456">
+  </label> -->
+  <textarea name="user[message]" rows="8" cols="80">
+    PUT MESSAGE HERE
+
+  </textarea>
+
+  <input type="submit"value="Sign In">
+</form>
